@@ -125,21 +125,27 @@
                 <div class="row justify-content-center">
                     <!-- Portfolio Item 1-->
                     <div class="col-md-6 col-lg-6 mb-5">
-                        <div class="portfolio-item mx-auto projectsize">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center projectpicture opacitypicture">
-                                <div class="portfolio-item-caption-content text-center text-white"><i></i>Coming Soon</div>
+                        <div class="portfolio-item mx-auto  projectsize" style="height: 250px;">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center projectpicture" onclick="toggle();">
+                                <div class="portfolio-item-caption-content text-center text-dark" ><i></i>To be uploaded<p>Click to see trailer</p></div>
                             </div>
-                            <img class="img-fluid projectimg" src="assets/project3.png" alt="..." />
-                        </div>
+                            <img class="img-fluid" src="assets/treasureproducts.png" alt="..."  />
+                        </div>            
                     </div>
                     <div class="col-md-6 col-lg-6 mb-5 text-secondary">
                         <div class="portfolio-item mx-auto">
                             <div>
-                                <h4 class="projecttitle">Full Stack Project</h4>
-                                <p>First Full stack project that will build with basics.</p>
+                                <div class="marginnegative">
+                                <h4 class="projecttitle">Treasure Products</h4>
+                                <p>The retail website aims to provide a one-stop destination where customers can find a diverse range of products, from daily essentials to specialty items.</p>
+                                </div>
+                                <div class="trailer">
+                                    <video src="./assets/tp_short.mp4" controls="true"></video>
+                                    <span class="close" onclick="pauseAllVideos(); toggle();"> &#x274c;</span>
+                                </div>
                                 <div class="row">
                                     <div class="col-md-6 col-lg-6 mb-5 projecticonsleft">
-                                        <i class="btn3 btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
+                                        <i class="btn2 btn-outline-light" onclick="window.open('https://github.com/FerdinandJr/treasure-products')">
                                         <i class="devicon-github-original"></i>
                                         View Code
                                     </i>
@@ -147,6 +153,7 @@
                                     <div class="col-md-6 col-lg-6 mb-5 projecticons">
                                         <i class="devicon-html5-plain-wordmark colored"></i>
                                         <i class="devicon-css3-plain-wordmark colored"></i>
+                                        <i class="devicon-bootstrap-plain-wordmark colored"></i>
                                         <i class="devicon-javascript-plain colored"></i>
                                         <i class="devicon-php-plain colored"></i>
                                         <i class="devicon-mysql-plain-wordmark colored"></i>
@@ -367,5 +374,6 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        
     </body>
 </html>
