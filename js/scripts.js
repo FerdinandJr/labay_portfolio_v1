@@ -82,3 +82,21 @@ $(document).ready(function(){
         indicators: true
     })
 });
+
+function toggle(){
+    var trailer = document.querySelector(".trailer")
+    
+    trailer.classList.toggle("active")
+}
+
+function pauseAllVideos() 
+    { 
+        $('iframe').contents().find('video').each(function () 
+        {
+            this.pause();
+        });
+        $('video').each(function () 
+        {
+            this.pause();
+        });
+    }
